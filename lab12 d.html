@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style type="text/css">
+		#paragraph{
+			background-color: #ddd;
+			width: 80%;
+			margin-left: 8%;
+			padding: 40px;
+			word-spacing: 1px;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="change_Color();">click me</button>
+	<p id="paragraph" align="center">Technology is all around you – in your gaming gadgets like the Wii, Playstation, Xbox, etc. and in your mobile phones, iPads, computers, etc. Most of the things we have in our kitchen, like the microwave, toaster, fridge, etc. are all different types of technology. Technology is when we take something from the world of science and then create it into something that humans use.
+
+We must keep our food cold so that it is not spoilt by being out in the warm weather. This concept of science helped scientists develop technology to keep our food cold when we are not eating it by using the fridge. However, all of us like to eat hot food. So, to instantly make food hot, scientists created a microwave. In this way, scientists used technology to help all of us with our daily lives. Technology is very useful in our daily lives.</p>
+
+	<script type="text/javascript">
+		function change_Color(){
+			document.getElementById("paragraph").style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+		}
+	</script>
+</body>
+</html>
